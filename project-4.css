@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+.nav-left{
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+.nav-center ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+}
+.nav-right{
+    display: flex;
+    gap: 10px;
+}
+.nav-icon{
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 20px;
+}
+.nav-head{
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 15px;
+}
