@@ -3,8 +3,20 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+    color: white;
+}
+                /* nav-section */
 nav{
-    width: 90%;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+.nav-main{
+    width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -16,24 +28,782 @@ nav{
     gap: 10px;
     font-size: 30px;
 }
+.nav-left i{
+    color: goldenrod;
+    font-size: 40px;
+}
 .nav-center ul{
     display: flex;
     list-style: none;
     gap: 20px;
     font-size: 20px;
 }
+.drop-container{
+    position: relative;
+    display: inline;
+}
+.drop-container .drop-name{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: white;
+}
+.drop-down{
+    width: 220px;
+    padding: 20px;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+    left: 0;
+    display: none;
+
+}
+.drop-down a{
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.drop-container:hover .drop-down{
+    display: block;
+}
+.drop-down a:hover{
+    background-color: #FFFFFF;
+    color: black;
+    transform: translateX(10px);
+}
+
+/* .drop-container{
+    display: inline;
+    position: relative;
+}
+.drop-down{
+    width: 100%;
+    padding: 30px;
+    background-color: bisque;
+    z-index: 1;
+    position: absolute;
+    top: 20%; */
+    /* left: 0; */
+    /* display: none; */
+/* } */
+/* .drop-down a{
+    text-decoration: none;
+    color:brown;
+    font-size: 20px;
+    display: block;
+    padding: 5px;
+} */
+/* .drop-container:hover .drop-down{
+    display: block;
+} */
 .nav-right{
     display: flex;
     gap: 10px;
 }
 .nav-icon{
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50px;
     padding: 10px;
     font-size: 20px;
 }
 .nav-head{
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 8px;
     font-size: 15px;
+}
+            /* section-1 */
+.sec-1{
+    display: flex; 
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("./pic-1.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+}
+.sec-1-left{
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 7%;
+    margin-bottom: 15%;
+}
+.sec-1-border{
+    border: 1px solid black;
+     background-color: rgb(84, 81, 81);
+    padding: 10px;
+}
+.sec-1-left h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+.sec-1-left h1 p{
+    color: goldenrod;
+    font-size: 80px;
+    display: inline;
+}
+.sec-1-left p{
+    font-size: 20px;
+    width: 99%;
+    margin-top: 3%;
+}
+.sec-1-same{
+    margin-top: 3%;
+    display: flex;
+    gap: 10px;
+}
+
+/* .sec-1-same span{
+    border: 2px solid black;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+} */
+.sec-span-1{
+    background-color: rgba(173, 4, 4, 0.932);
+    border: 2px solid rgba(173, 4, 4, 0.932);
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+}
+.sec-span-2{
+    background-color:none;
+    border: 2px solid white;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+}
+.sec-span-1:hover{
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+    transition: all 0.6s 0s ease-in-out;
+}
+.sec-span-2:hover{
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+    transition: all 0.6s 0s ease-in-out;
+}
+
+
+.sec-1-right{
+    width: 20%;
+    margin-top: 5%;
+}
+.sec-1-right ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 50%;
+    margin-top: 60%;
+    font-size: 20px;
+}
+.icon-color-1{
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 50%;
+    width: 35%;
+    padding: 10px;
+}
+.icon-color-1:hover{
+    margin-left: 8%;
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    transition: 0.7s;
+}
+.icon-color-2{
+    border: 1px solid rgb(6, 58, 230);
+    background-color: rgb(6, 58, 230);
+    border-radius: 50%;
+    width: 35%;
+    padding: 10px;
+}
+.icon-color-2:hover{
+    margin-left: 8%;
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    transition: 0.7s;
+}
+.icon-color-3{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    width: 35%;
+    padding: 10px;
+}
+.icon-color-3:hover{
+    margin-left: 8%;
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    transition: 0.7s;
+}
+.icon-color-4{
+    border: 1px solid rgba(55, 0, 255, 0.719);
+    background-color: rgba(55, 0, 255, 0.719);
+    border-radius: 50%;
+    width: 35%;
+    padding: 10px;
+}
+.icon-color-4:hover{
+    margin-left: 8%;
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    transition: 0.7s;
+}
+
+        /* section-2 */
+.sec-2{
+    display: flex;
+}
+.sec-2-left{
+    width: 50%;
+    margin-top: 5%;
+}
+/* .position{
+    position: relative;
+} */
+.rest-img{
+    width: 60%;
+    height: 90vh;
+    margin-left: 40%;
+}
+.tomato-img{
+    width: 6%;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -45%;
+    background-color: none;
+    transition: all 0.3s 0s ease-out;
+}
+.burger-img{
+    width: 25%;
+    position: absolute;
+    margin-left: -45%;
+    height: 70vh;
+    margin-top: 20%;
+}
+.sec-2-right{
+    width: 50%;
+    margin-left: 3%;
+    margin-top: 8%;
+}
+.sec-2-first span{
+    border: 1px solid black;
+     background-color: rgb(84, 81, 81);
+    padding: 10px;
+}
+.sec-2-first h2{
+    font-size: 60px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.sec-2-first h1{
+    font-size: 60px;
+    width: 80%;
+}
+.sec-2-first p{
+    font-size: 20px;
+    margin-top: 5%;
+    width: 90%;
+}
+.sec-2-right-main{
+    display: flex;
+    width: 100%;
+    /* gap: 70px; */
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.sec-2-right-1{
+    width: 30%;
+}
+.sec-2-right-1 p{
+    border: 1px solid black;
+    width: 80%;
+    background-color: rgba(173, 4, 4, 0.932);
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.sec-2-right-1 p:hover{
+    background-color: goldenrod;
+    transition: 0.7s;
+}
+.sec-2-right-2{
+    display: flex;
+    width: 40%;
+}
+.sec-2-right-3{
+    width: 100%;
+}
+.sec-2-right-3 i{
+    border: 1px solid black;
+     background-color: rgb(84, 81, 81);
+    padding: 12px;
+    width: 50%;
+    font-size: 20px;
+}
+.sec-2-right-4{
+    width: 100%;
+}
+.sec-2-right-4 p{
+    width: 100%;
+    font-size: 20px;
+    margin-left: -40px;
+}
+.p-color{
+    color: goldenrod;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.lemon-pic{
+    width: 20%;
+}
+
+.lemon-pic img{
+    width: 50%;
+}
+        /* section-3 */
+.sec-3{
+     background-color: rgb(84, 81, 81);
+}
+.sec-3-main{
+    width: 90%;
+    margin: auto;
+     margin-top: 15%;
+     display: flex;
+     justify-content: space-around;
+}
+.sec-3-adjusment{
+    width: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.sec-3-adjusment img{
+    width: 80%;
+    height: 25vh;
+    border-radius: 50%;
+    margin-left: 8%;
+}
+.sec-3-adjusment h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 8%;
+}
+.sec-3-adjusment p{
+    width: 100%;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 8%;
+}
+.sec-3-border{
+    width: 80%;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 8%;
+    text-align: center;
+    margin-top: 8%;
+}
+.sec-3-border:hover{
+    background-color: goldenrod;
+    border: none;
+    transition: 0.8s;
+}
+
+        /* section-4 */
+.sec-4{
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+.sec-4 h2 {
+    border: 1px solid grey;
+     background-color: rgb(84, 81, 81);
+    width: 15%;
+    font-size: 20px;
+    margin-left: 43%;
+    padding: 8px;
+    align-content: center;
+}
+.sec-4 h1 {
+    margin-top: 1%;
+    font-size: 45px;
+}
+.food-list{
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.list1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.list1 p{
+    font-size: 20px;
+    color: white;
+}
+.list1 .box{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: goldenrod;
+}
+        /* section-5 */
+.sec-5{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+}
+.sec-5-left{
+    width: 45%;
+}
+.sec-5-same{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+}
+.sec-5-same img{
+    width: 20%;
+    border-radius: 50%;
+}
+.sec-5-diff{
+    margin-top: 5%;
+}
+.sec-5-diff h2{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.sec-5-diff p{
+    font-size: 20px;
+    margin-top: 2%;
+}
+.sec-5-right{
+    width: 45%;
+    margin-left: 10%;
+}
+/* .sec-5-same-2{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+}
+.sec-5-same-2 img{
+    width: 20%;
+    height: 17vh;
+    border-radius: 50%;
+} */
+        /* section-6 */
+.sec-6{
+      background-color: rgb(84, 81, 81);
+}
+.sec-6-main{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.sec-6-chef{
+    width: 30%;
+    position: relative;
+}
+.sec-6-head{
+    background-color: gray;
+    border: 1px solid grey;
+    color: white;
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 7%;
+    padding: 6%;
+}
+.sec-6-head:hover{
+    background-color:rgba(173, 4, 4, 0.932);
+    border: none;
+    color: black;
+    transition: 0.7s;
+}
+.sec-6-head h1{
+    font-size: 20px;
+}
+.sec-6-head h2{
+    font-size: 15px;
+    text-align: center;
+}
+.sec-6-chef img{
+    width: 70%;
+    height: 60vh;
+    z-index: -1;
+    margin-left: 3%;
+}
+        /* section-7 */
+.sec-7{
+    background-image:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./Chinese-Chicken-Spaghetti\ img.jpg");
+    background-size: cover;
+}
+.sec-7-all{
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
+}
+.same-icons-7 i{
+    font-size: 90px;
+    margin-left: 30%;
+    color: goldenrod;
+}
+.same-icons-7 h1{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 5%;
+}
+.same-icons-7 h2{
+    font-size: px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+.only-head{
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+}
+.only-h2{
+    width: 15%;
+    border: 1px solid black;
+    background-color: grey;
+    padding: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.only-h2 h2{
+    padding: 2%;
+}
+.only-h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 1%;
+}
+            /* section-8 */
+.sec-8{
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.sec-8-one{
+    width: 30%;
+   
+}
+.sec-8-one img{
+    width: 27%;
+    height: 40vh;
+    position: absolute;
+    z-index: -1;
+}
+.sec-8-main{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    margin-top: 70%;
+     /* position: relative; */
+}
+.one-8{
+    margin-top: 4%;
+}
+.sec-8-one p {
+    width: 95%;
+    margin-top:4%;
+}
+.two-8{
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+.two-8:hover{
+    color: goldenrod;
+    transition: 0.7s;
+}
+hr{
+    color: black;
+}
+         /* section-9 */
+.sec-9{
+    background-color: rgb(84, 81, 81)
+}
+.sec-9-main{
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+}
+
+.sec-9-left{
+    width: 45%;
+}
+.sec-9-left img{
+    width: 90%;
+    height: 80vh;
+}
+.sec-9-right{
+    width: 45%;
+    margin-left:5%;
+    margin-top: 10%;
+}
+.right-9-h2 h2{
+    border: 1px solid grey;
+    background-color: grey;
+    font-size: 15px;
+    width: 30%;
+    padding: 1%;
+    text-align: center;
+}
+.sec-9-right h1{
+    font-size: 70px;
+    margin-top: 4%;
+}
+.sec-9-right p{
+    font-size: 22px;
+    margin-top: 4%;
+}
+.sec-9-right button{
+    width: 35%;
+    font-size: 15px;
+    padding: 2%;
+    margin-top: 4%;
+    margin-bottom: 20%;
+    color: white;
+    background-color: goldenrod;
+    border: none;
+}
+.sec-9-right button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.7s;
+}
+
+            /* section-10 */
+.sec-10{
+    background-color:  rgb(84, 81, 81);
+     /* margin-top: 10%; */
+}
+.sec-10-main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.sec-10-left{
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.left-10{
+    display: flex;
+    gap: 3%;
+}
+.left-10 i{
+    font-size: 40px;
+    color: goldenrod;
+}
+.left-10 h2{
+    font-size: 30px;
+    margin-top: 2%;
+}
+.sec-10-left p{
+    font-size: 20px;
+    margin-top: 4%;
+}
+.sec-10-left ul{
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    margin-top: 4%;
+    font-size: 20px;
+}
+.icon-arrange{
+    border: 1px solid gray;
+    background-color: gray;
+
+    padding: 2%;
+}
+.sec-10-center{
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.sec-10-center h2{
+    font-size: 20px;
+    margin-top: 5%;
+}
+.center-10{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    gap: 20px;
+    margin-left: 8%;
+}
+.sec-10-right{
+    width: 35%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.sec-10-right h2{
+    font-size: 22px;
+    margin-top: 3%;
+}
+.right-10{
+    display: flex;
+    margin-top: 4%;
+}
+.img-10{
+    width: 50%;
+}
+.img-10 img{
+    width: 90%;
+    height: 15vh;
+}
+.icon-10 p{
+    font-size: 20px;
+}
+.icon-10 h2{
+    font-size: 22px;
+}
+        /* footer */
+footer{
+    width: 90%;
+    height: 5vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15 px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
